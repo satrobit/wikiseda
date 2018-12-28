@@ -1,7 +1,7 @@
 {
 	"name": "satrobit/wikiseda",
 	"description": "A simple tool to download a signers whole archive from wikiseda.com",
-	"version": "1.1",
+	"version": "1.0",
 	"keywords": [
 		"music",
 		"farsi",

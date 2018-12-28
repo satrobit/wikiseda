@@ -1,0 +1,31 @@
+{
+	"name": "satrobit/wikiseda",
+	"description": "A simple tool to download a signers whole archive from wikiseda.com",
+	"version": "1.1",
+	"keywords": [
+		"music",
+		"farsi",
+		"wikiseda",
+		"persian"
+	],
+	"authors": [
+		{
+			"name": "Amir Keshavarz",
+			"email": "amirkekh@gmail.com"
+		}
+	],
+    "require": {
+        "symfony/console": "~3.0",
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wikiseda\\": "src/"
+        }
+    },
+	"bin": [
+        "wikiseda"
+    ],
+	"license": "MIT",
+	"minimum-stability": "stable"
+}

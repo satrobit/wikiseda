@@ -1,0 +1,23 @@
+#!/usr/bin/env php
+<?php
+
+// installed via composer?
+if (file_exists($a = __DIR__ . '/../../autoload.php')) {
+    require_once $a;
+} else {
+    require_once __DIR__ . '/vendor/autoload.php';
+}
+
+
+use Wikiseda\Commands\SearchCommand;
+use Wikiseda\Commands\ArtistCommand;
+use Wikiseda\Commands\DownloadCommand;
+use Symfony\Component\Console\Application;
+
+$application = new Application();
+$application->setName('Wikiseda');
+$application->setVersion('1.1');
+$application->add(new SearchCommand());
+$application->add(new ArtistCommand());
+$application->add(new DownloadCommand());
+$application->run();

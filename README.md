@@ -1,4 +1,5 @@
 
+
 #  wikiseda
 A simple tool to download a signers whole archive from wikiseda.com
 
@@ -16,6 +17,17 @@ composer global require satrobit/wikiseda
 ~~~bash
 wikiseda search shadmehr
 ~~~
+**Arguments:**
+|name|Description|
+|--|--|
+|query|Search Query|
+
+**Options:**
+|name|Description|Default Value|
+|--|--|--|
+|type|Type of the result|artist|
+|page|Custom result page|0|
+|order|Custom result order|top|
 
 **Result:**
 
@@ -34,11 +46,23 @@ wikiseda search shadmehr
 +-------+-----------------+--------+--------+
 ~~~
 
+
 ## Artists archive
 **Command:**
 ~~~bash
 wikiseda artist 76
 ~~~
+**Arguments:**
+|name|Description|
+|--|--|
+|artist|Artist ID|
+
+**Options:**
+|name|Description|Default Value|
+|--|--|--|
+|type|Type of the result|album|
+|page|Custom result page|0|
+|order|Custom result order|top|
 
 **Result:**
 
@@ -79,6 +103,17 @@ wikiseda artist 76
 ~~~bash
 wikiseda download 76
 ~~~
+**Arguments:**
+|name|Description|
+|--|--|
+|artist|Artist ID|
+
+**Options:**
+|name|Description|Default Value|
+|--|--|--|
+|output|Directory to store music files|output/|
+|concurrent|Number of concurrent workers|4|
+
 **Result:**
 ~~~
 486/486 [============================]   100%
